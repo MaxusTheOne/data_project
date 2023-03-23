@@ -1,7 +1,7 @@
 {
   "name": "Mr. Mackey",
   "nickname": "Fireman Tom",
-  "image": "images/Mr_Mackey.webp",
+  "image": "https://upload.wikimedia.org/wikipedia/en/9/9e/Mr._Mackey.png",
   "occupation": "School Counselor",
   "age": 50,
   "voicedBy": "Trey Parker",

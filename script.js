@@ -8,8 +8,9 @@ window.addEventListener("load", initApp);
 // intialise app
 async function initApp() {
   let mrMackey = await getCharacter("data/mrMackey.json");
+  let kyle = await getCharacter("https://raw.githubusercontent.com/fili0727/Data-opgave/main/kyle.json");
   addCharacter(mrMackey);
-  addCharacter(harry);
+  addCharacter(kyle);
 }
 function addCharacter(character) {
   let characterHTML = /*HTML*/ `
