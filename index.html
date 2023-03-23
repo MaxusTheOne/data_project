@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Southpark project</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,6 +14,34 @@
     <main>
       <section id="characters" class="grid-container"></section>
     </main>
+    <dialog id="dialog-character">
+      <section class="dialog-grid">
+        <figure><img id="dialog-image" src="images/profile.jpg" alt="" /></figure>
+        <article>
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-character-description"></p>
+          <section>
+            <h4>Personal Info</h4>
+            <ul>
+              <li>Gender: <span id="dialog-gender"></span></li>
+              <li>Age: <span id="dialog-age"></span></li>
+              <li>Hair Color: <span id="dialog-hair-color"></span></li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Voice actor</h4>
+            <p><span id="dialog-name">Character</span> is voiced by <span id="dialog-voiced-by">actor name</span>.</p>
+          </section>
+        </article>
+      </section>
+      <form method="dialog">
+        <button id="btn-cancel">Close</button>
+      </form>
+    </dialog>
+    <footer>
+      <p>Southpark web by Max</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
