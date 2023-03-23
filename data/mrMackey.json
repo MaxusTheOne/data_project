@@ -1,0 +1,16 @@
+{
+  "name": "Mr. Mackey",
+  "nickname": "Fireman Tom",
+  "image": "images/Mr_Mackey.webp",
+  "occupation": "School Counselor",
+  "age": 50,
+  "voicedBy": "Trey Parker",
+  "gender": "Male",
+  "religion": "Roman Catholic",
+  "catchPhrase": "m'kay",
+  "hairColor": "black",
+  "schoolGrade": null,
+  "episodes": [],
+  "appearences": null,
+  "firstAppearence": "S01E09"
+}
