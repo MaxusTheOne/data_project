@@ -42,6 +42,7 @@ function showCharacterCard(character) {
   document.querySelector("#dialog-title").textContent = character.name;
 
   // description
+  let description = generateDescription();
 
   document.querySelector("#dialog-gender").textContent = character.gender;
   document.querySelector("#dialog-age").textContent = character.age;
@@ -51,6 +52,8 @@ function showCharacterCard(character) {
 
   document.querySelector("#dialog-character").showModal();
 }
+
+function generateDescription(character) {}
 // <p class = "name">Nickname: <span>${character.nickname}</span></p>
 // <p class = "name">Occupation: <span>${character.occupation}</span></p>
 // <p class = "name">Voiced by: <span>${character.voicedBy}</span></p>
