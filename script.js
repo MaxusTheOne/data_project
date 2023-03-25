@@ -24,7 +24,7 @@ async function getCharacter(link) {
 function addCharacter(character) {
   let characterHTML = /*HTML*/ `
         <article class = "grid-item">
-        <h2 class = "name">Name: <span>${character.name}</span></h2>
+        <h2 class = "name"><span>${character.name}</span></h2>
             <img src = "${character.image}">
             <p class = "age">Age: <span>${character.age}</span></p>
             </article>

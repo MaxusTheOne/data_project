@@ -2,7 +2,7 @@
   --blue: rgb(116, 188, 174);
   --grey: rgb(95, 94, 92);
   --light-green: rgb(94, 93, 91);
-  --light-grey: rgb(127, 126, 128);
+  --light-grey: rgb(168, 167, 171);
   --text-color-light: rgb(187, 205, 203);
   --text-color-dark: rgb(42, 42, 42);
   --white: rgb(136, 197, 192);
@@ -181,7 +181,12 @@ button {
   text-transform: uppercase;
   padding: 0;
   margin: 0 0 0;
-  width: 100%;
+  width: 5%;
+  height: 5%;
+  background-color: var(--light-grey);
+  position: absolute;
+  top: 1%;
+  right: 1%;
 }
 
 input {
@@ -213,13 +218,21 @@ dialog::backdrop {
 /* dialog grid */
 .dialog-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 10fr;
 }
+/* .parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 9fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+} */
 
 .div1 {
   grid-area: 1 / 1 / 2 / 2;
   background-color: var(--blue);
+  padding: 0.1em;
 }
 .cancel-btn {
   grid-area: 1 / 2 / 2 / 3;
@@ -227,6 +240,7 @@ dialog::backdrop {
   padding: 0;
   background-color: var(--blue);
 }
+
 dialog h2 {
   background-color: var(--blue);
   margin-top: 0%;
