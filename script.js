@@ -24,8 +24,8 @@ async function getCharacter(link) {
 function addCharacter(character) {
   let characterHTML = /*HTML*/ `
         <article class = "grid-item">
+        <h2 class = "name">Name: <span>${character.name}</span></h2>
             <img src = "${character.image}">
-            <h2 class = "name">Name: <span>${character.name}</span></h2>
             <p class = "age">Age: <span>${character.age}</span></p>
             </article>
             `;
@@ -38,8 +38,8 @@ function addCharacter(character) {
 
 function showCharacterCard(character) {
   console.log(character);
+  document.querySelector("#dialog-title").textContent = "From: " + character.name;
   document.querySelector("#dialog-image").src = character.image;
-  document.querySelector("#dialog-title").textContent = character.name;
 
   // description
   let description = generateDescription();

@@ -3,7 +3,7 @@
   --grey: rgb(95, 94, 92);
   --light-green: rgb(94, 93, 91);
   --light-grey: rgb(127, 126, 128);
-  --text-color-light: rgb(169, 197, 194);
+  --text-color-light: rgb(187, 205, 203);
   --text-color-dark: rgb(42, 42, 42);
   --white: rgb(136, 197, 192);
   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -179,9 +179,9 @@ button {
   background-color: var(--blue);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 0.5em 1em;
+  padding: 0;
+  margin: 0 0 0;
   width: 100%;
-  max-width: 380px;
 }
 
 input {
@@ -200,22 +200,33 @@ dialog {
   background-color: var(--light-green);
   width: 65vw;
   padding: 0%;
-  z-index: 2;
 }
 
 #dialog-character {
-  border: 1em solid var(--blue);
+  border: 0.25em solid var(--light-grey);
 }
 
 dialog::backdrop {
   background: rgb(172, 198, 201, 0.8);
 }
 
+/* dialog grid */
 .dialog-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: var(--blue);
+}
+.cancel-btn {
+  grid-area: 1 / 2 / 2 / 3;
+  margin: 0;
+  padding: 0;
+  background-color: var(--blue);
+}
 dialog h2 {
   background-color: var(--blue);
   margin-top: 0%;
