@@ -7,12 +7,8 @@ window.addEventListener("load", initApp);
 
 // intialise app
 async function initApp() {
-  let mrMackey = await getCharacter("https://raw.githubusercontent.com/MaxusTheOne/data_project/main/data/mrMackey.json");
-  let kyle = await getCharacter("https://raw.githubusercontent.com/fili0727/Data-opgave/main/kyle.json");
-  let kenny = await getCharacter("https://raw.githubusercontent.com/Mart0808DK/Data-fetch-projekt/main/kenny.json");
-  addCharacter(mrMackey);
-  addCharacter(kyle);
-  addCharacter(kenny);
+  let gottenList = await getCharacter("https://cederdorff.github.io/dat-js/05-data/southpark.json");
+  gottenList.forEach(addCharacter);
 }
 // get character data
 async function getCharacter(link) {
