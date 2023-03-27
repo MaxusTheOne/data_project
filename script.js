@@ -21,6 +21,7 @@ async function getCharacter(link) {
   console.log(data);
   return data;
 }
+// adds character to html elements
 function addCharacter(character) {
   let characterHTML = /*HTML*/ `
         <article class = "grid-item">
@@ -35,7 +36,7 @@ function addCharacter(character) {
     showCharacterCard(character);
   }
 }
-
+// context to be show on character card
 function showCharacterCard(character) {
   console.log(character);
   document.querySelector("#dialog-title").textContent = "From: " + character.name;
