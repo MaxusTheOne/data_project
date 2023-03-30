@@ -43,7 +43,14 @@ function showCharacterCard(character) {
 
   document.querySelector("#dialog-gender").textContent = character.gender;
   document.querySelector("#dialog-age").textContent = character.age;
+  document.querySelector("#dialog-religion").textContent = character.religion;
   document.querySelector("#dialog-hair-color").textContent = character.hairColor;
+  document.querySelector("#dialog-nickname").textContent = character.nickname;
+  document.querySelector("#dialog-occupation").textContent = character.occupation;
+  document.querySelector("#dialog-catch-phrase").textContent = character.catchPhrase;
+  document.querySelector("#dialog-episodes").textContent = character.episodes;
+  document.querySelector("#dialog-appearences").textContent = character.appearences;
+  document.querySelector("#dialog-first-appearence").textContent = character.firstAppearence;
 
   document.querySelector("#dialog-voiced-by").textContent = character.voicedBy;
 
@@ -51,14 +58,5 @@ function showCharacterCard(character) {
 }
 
 function generateDescription(character) {}
-// <p class = "name">Nickname: <span>${character.nickname}</span></p>
-// <p class = "name">Occupation: <span>${character.occupation}</span></p>
-// <p class = "name">Voiced by: <span>${character.voicedBy}</span></p>
-// <p class = "name">Gender: <span>${character.gender}</span></p>
-// <p class = "name">Religion: <span>${character.religion}</span></p>
-// <p class = "name">Catch phrase: <span>${character.catchPhrase}</span></p>
-// <p class = "name">Hair color: <span>${character.hairColor}</span></p>
-// <p class = "name">School grade: <span>${character.schoolGrade}</span></p>
-// <p class = "name">Episodes: <span>${character.episodes}</span></p>
-// <p class = "name">Appearences: <span>${character.appearences}</span></p>
-// <p class = "name">First appearence: <span>${character.firstAppearence}</span></p>
+
+// <p class = "name">School grade: <span>${character.schoolGrade}</span></p> put in desc
