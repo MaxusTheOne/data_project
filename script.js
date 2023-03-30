@@ -7,7 +7,7 @@ window.addEventListener("load", initApp);
 
 // intialise app
 async function initApp() {
-  let gottenList = await getCharacter("https://cederdorff.github.io/dat-js/05-data/southpark.json");
+  const gottenList = await getCharacter("https://cederdorff.github.io/dat-js/05-data/southpark.json");
   gottenList.forEach(addCharacter);
 }
 // get character data
@@ -19,7 +19,7 @@ async function getCharacter(link) {
 }
 // adds character to html elements
 function addCharacter(character) {
-  let characterHTML = /*HTML*/ `
+  const characterHTML = /*HTML*/ `
         <article class = "grid-item">
         <h2 class = "name"><span>${character.name}</span></h2>
             <img src = "${character.image}">
@@ -39,7 +39,8 @@ function showCharacterCard(character) {
   document.querySelector("#dialog-image").src = character.image;
 
   // description
-  let description = generateDescription();
+  let description = generateDescription(character);
+  document.querySelector("#dialog-character-description").textContent = description;
 
   document.querySelector("#dialog-gender").textContent = character.gender;
   document.querySelector("#dialog-age").textContent = character.age;
@@ -57,6 +58,10 @@ function showCharacterCard(character) {
   document.querySelector("#dialog-character").showModal();
 }
 
-function generateDescription(character) {}
+function generateDescription(character) {
+  let text;
+  if (character.schoolGrade != null) text = `${character.name} is in ${character.schoolGrade} grade`;
+  else text = `Not in school`;
 
-// <p class = "name">School grade: <span>${character.schoolGrade}</span></p> put in desc
+  return text;
+}
