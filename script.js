@@ -59,9 +59,9 @@ function showCharacterCard(character) {
 }
 
 function generateDescription(character) {
-  let text;
+  let description;
   if (character.schoolGrade != null) text = `${character.name} is in ${character.schoolGrade} grade`;
-  else text = `Not in school`;
+  else description = `Not in school`;
 
-  return text;
+  return description;
 }
